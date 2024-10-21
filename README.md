@@ -16,7 +16,7 @@ To set up the project locally, follow these steps:
 1. Clone the repository:
    ```
    git clone https://github.com/AnshumanX304/Ast-rule-ui.git
-   cd /Ast-rule-ui
+   cd Ast-rule-ui
    ```
 
 2. Install the dependencies:
