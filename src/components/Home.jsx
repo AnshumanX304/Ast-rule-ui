@@ -5,7 +5,7 @@ const Home = () => {
 
     return (
         <div className="flex items-center justify-center min-h-screen bg-gray-100 font-sans">
-            <div className="text-center">
+            <div className="text-center bg-white p-20 rounded-xl shadow-md">
                 <h1 className="text-4xl font-extrabold text-gray-800 mb-8">AST RULE ENGINE</h1>
                 <div className="space-y-4">
                     <button

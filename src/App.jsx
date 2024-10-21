@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Home from "./components/Home"
+import Home from "./components/home"  
 import CreateRule from './components/CreateRule';
 import CombineRule from './components/CombineRule';
 import ValidateData from './components/ValidateData';

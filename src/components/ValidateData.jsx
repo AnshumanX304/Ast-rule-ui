@@ -14,13 +14,11 @@ const ValidateData = () => {
             setResponseMessage("");
             setResult(null); 
 
-            
             if (!astJson || !dataDict) {
                 setError("Both AST and data dictionary must be provided.");
                 return;
             }
 
-            
             const astObject = JSON.parse(astJson);
             const dataObject = JSON.parse(dataDict);
 
@@ -48,7 +46,11 @@ const ValidateData = () => {
                 <h1 className="text-4xl font-extrabold text-gray-800 mb-6">Validate Data</h1>
                 <div className="space-y-4">
                     <div>
+                        <label htmlFor="astJson" className="block text-left font-medium text-gray-700 mb-2">
+                            AST JSON Structure:
+                        </label>
                         <textarea
+                            id="astJson"
                             value={astJson}
                             onChange={(e) => setAstJson(e.target.value)}
                             placeholder="Enter AST JSON structure as a string"
@@ -57,7 +59,11 @@ const ValidateData = () => {
                         />
                     </div>
                     <div>
+                        <label htmlFor="dataDict" className="block text-left font-medium text-gray-700 mb-2">
+                            Data Dictionary:
+                        </label>
                         <textarea
+                            id="dataDict"
                             value={dataDict}
                             onChange={(e) => setDataDict(e.target.value)}
                             placeholder="Enter data dictionary as a string (e.g., { 'age': 25, 'department': 'Sales', 'experience': 2, 'salary': 50000 })"
